@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B6E2D0B227414167004E45BC /* Power Grid WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2D0B627414167004E45BC /* Assets.xcassets */; };
 		B6E2D0BD27414167004E45BC /* Power Grid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0C227414167004E45BC /* PowerGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0C127414167004E45BC /* PowerGridApp.swift */; };
@@ -59,7 +59,7 @@
 			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
 			dstSubfolderSpec = 16;
 			files = (
-				B6E2D0B227414167004E45BC /* Power Grid WatchKit App.app in Embed Watch Content */,
+				B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,7 +68,7 @@
 
 /* Begin PBXFileReference section */
 		B6E2D0AD27414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		B6E2D0B127414167004E45BC /* Power Grid WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6E2D0B127414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B627414167004E45BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Power Grid WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0C127414167004E45BC /* PowerGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGridApp.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				B6E2D0AD27414167004E45BC /* Power Grid.app */,
-				B6E2D0B127414167004E45BC /* Power Grid WatchKit App.app */,
+				B6E2D0B127414167004E45BC /* Power Grid.app */,
 				B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */,
 			);
 			name = Products;
@@ -214,7 +214,7 @@
 			);
 			name = "Power Grid WatchKit App";
 			productName = "Power Grid WatchKit App";
-			productReference = B6E2D0B127414167004E45BC /* Power Grid WatchKit App.app */;
+			productReference = B6E2D0B127414167004E45BC /* Power Grid.app */;
 			productType = "com.apple.product-type.application.watchapp2";
 		};
 		B6E2D0BB27414167004E45BC /* Power Grid WatchKit Extension */ = {
@@ -530,11 +530,10 @@
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Power_Grid_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "Power Grid WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Power Grid";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -555,11 +554,10 @@
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				IBSC_MODULE = Power_Grid_WatchKit_Extension;
-				INFOPLIST_KEY_CFBundleDisplayName = "Power Grid WatchKit App";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid.watchkitapp";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Power Grid";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
