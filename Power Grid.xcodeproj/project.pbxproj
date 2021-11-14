@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B64F13C12741B7DB0054E6B8 /* SwiftUICharts */; };
 		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2D0B627414167004E45BC /* Assets.xcassets */; };
 		B6E2D0BD27414167004E45BC /* Power Grid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -21,7 +22,6 @@
 		B6E2D0E327414480004E45BC /* ApiAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0E227414480004E45BC /* ApiAgent.swift */; };
 		B6EC4ED227414BF400E4839C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC4ED127414BF400E4839C /* MainViewModel.swift */; };
 		B6EC4ED7274154CF00E4839C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC4ED6274154CF00E4839C /* Bar.swift */; };
-		B6EC4EE12741698500E4839C /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B6EC4EE02741698500E4839C /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,7 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6EC4EE12741698500E4839C /* SwiftUICharts in Frameworks */,
+				B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,7 +194,7 @@
 			);
 			name = "Power Grid";
 			packageProductDependencies = (
-				B6EC4EDF2741697E00E4839C /* SwiftUICharts */,
+				B64F13C02741B7D30054E6B8 /* SwiftUICharts */,
 			);
 			productName = "Power Grid";
 			productReference = B6E2D0AD27414167004E45BC /* Power Grid.app */;
@@ -231,7 +231,7 @@
 			);
 			name = "Power Grid WatchKit Extension";
 			packageProductDependencies = (
-				B6EC4EE02741698500E4839C /* SwiftUICharts */,
+				B64F13C12741B7DB0054E6B8 /* SwiftUICharts */,
 			);
 			productName = "Power Grid WatchKit Extension";
 			productReference = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */;
@@ -268,7 +268,7 @@
 			);
 			mainGroup = B6E2D0A627414166004E45BC;
 			packageReferences = (
-				B6EC4EDE2741697E00E4839C /* XCRemoteSwiftPackageReference "ChartView" */,
+				B64F13BF2741B7D30054E6B8 /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = B6E2D0AE27414167004E45BC /* Products */;
 			projectDirPath = "";
@@ -635,7 +635,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B6EC4EDE2741697E00E4839C /* XCRemoteSwiftPackageReference "ChartView" */ = {
+		B64F13BF2741B7D30054E6B8 /* XCRemoteSwiftPackageReference "ChartView" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/otormaigh/ChartView";
 			requirement = {
@@ -646,14 +646,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		B6EC4EDF2741697E00E4839C /* SwiftUICharts */ = {
+		B64F13C02741B7D30054E6B8 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B6EC4EDE2741697E00E4839C /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = B64F13BF2741B7D30054E6B8 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
-		B6EC4EE02741698500E4839C /* SwiftUICharts */ = {
+		B64F13C12741B7DB0054E6B8 /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = B6EC4EDE2741697E00E4839C /* XCRemoteSwiftPackageReference "ChartView" */;
+			package = B64F13BF2741B7D30054E6B8 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
