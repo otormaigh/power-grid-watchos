@@ -2,18 +2,17 @@
 //  Power_GridApp.swift
 //  Power Grid WatchKit Extension
 //
-//  Created by Fred on 14/11/2021.
+//  Created by Elliot Tormey on 14/11/2021.
 //
 
 import SwiftUI
 
 @main
-struct Power_GridApp: App {
+struct PowerGridApp: App {
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+                ContentView(viewModel: MainViewModel())
+                    .edgesIgnoringSafeArea(.all)
         }
 
         WKNotificationScene(controller: NotificationController.self, category: "myCategory")

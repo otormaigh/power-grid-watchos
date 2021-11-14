@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftUICharts",
+        "repositoryURL": "https://github.com/otormaigh/ChartView",
+        "state": {
+          "branch": "bugfixes",
+          "revision": "d5861e0de9dc75e781f6fa4993e68649eef1939a",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
