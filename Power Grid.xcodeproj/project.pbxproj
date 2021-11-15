@@ -21,7 +21,6 @@
 		B6E2D0E127414452004E45BC /* ApiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0E027414452004E45BC /* ApiService.swift */; };
 		B6E2D0E327414480004E45BC /* ApiAgent.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0E227414480004E45BC /* ApiAgent.swift */; };
 		B6EC4ED227414BF400E4839C /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC4ED127414BF400E4839C /* MainViewModel.swift */; };
-		B6EC4ED7274154CF00E4839C /* Bar.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6EC4ED6274154CF00E4839C /* Bar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,7 +83,6 @@
 		B6E2D0E027414452004E45BC /* ApiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiService.swift; sourceTree = "<group>"; };
 		B6E2D0E227414480004E45BC /* ApiAgent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiAgent.swift; sourceTree = "<group>"; };
 		B6EC4ED127414BF400E4839C /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
-		B6EC4ED6274154CF00E4839C /* Bar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,8 +132,6 @@
 				B6EC4ED5274154BB00E4839C /* UI */,
 				B6E2D0DF27414442004E45BC /* Service */,
 				B6E2D0C127414167004E45BC /* PowerGridApp.swift */,
-				B6E2D0C327414167004E45BC /* ContentView.swift */,
-				B6EC4ED127414BF400E4839C /* MainViewModel.swift */,
 				B6E2D0C527414167004E45BC /* NotificationController.swift */,
 				B6E2D0C727414167004E45BC /* NotificationView.swift */,
 				B6E2D0C927414167004E45BC /* ComplicationController.swift */,
@@ -167,7 +163,8 @@
 		B6EC4ED5274154BB00E4839C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				B6EC4ED6274154CF00E4839C /* Bar.swift */,
+				B6E2D0C327414167004E45BC /* ContentView.swift */,
+				B6EC4ED127414BF400E4839C /* MainViewModel.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -322,7 +319,6 @@
 				B6E2D0C227414167004E45BC /* PowerGridApp.swift in Sources */,
 				B6E2D0E327414480004E45BC /* ApiAgent.swift in Sources */,
 				B6E2D0C827414167004E45BC /* NotificationView.swift in Sources */,
-				B6EC4ED7274154CF00E4839C /* Bar.swift in Sources */,
 				B6EC4ED227414BF400E4839C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
