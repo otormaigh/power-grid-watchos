@@ -67,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B67569342742EDA4007E0617 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6E2D0AD27414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B127414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B627414167004E45BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -101,6 +102,7 @@
 		B6E2D0A627414166004E45BC = {
 			isa = PBXGroup;
 			children = (
+				B67569342742EDA4007E0617 /* README.md */,
 				B6E2D0B527414167004E45BC /* Power Grid WatchKit App */,
 				B6E2D0C027414167004E45BC /* Power Grid WatchKit Extension */,
 				B6E2D0AE27414167004E45BC /* Products */,
