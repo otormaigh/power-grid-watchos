@@ -42,12 +42,12 @@ struct FuelMix: Decodable, Identifiable {
     init(from decoder: Decoder) throws {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
-        id = 0
         errorMessage = try String(values.decodeIfPresent(String.self, forKey: .errorMessage) ?? "")
         
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
         lastUpdated = formatter.date(from: try String(values.decode(String.self, forKey: .lastUpdated)))!
+        id = Int(lastUpdated.timeIntervalSince1970)
         
         status = try String(values.decode(String.self, forKey: .status))
         

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B64F13C12741B7DB0054E6B8 /* SwiftUICharts */; };
+		B66304482746AE1A001E4710 /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66304472746AE1A001E4710 /* Cache.swift */; };
 		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2D0B627414167004E45BC /* Assets.xcassets */; };
 		B6E2D0BD27414167004E45BC /* Power Grid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B66304472746AE1A001E4710 /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
 		B67569342742EDA4007E0617 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B6E2D0AD27414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B127414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -156,6 +158,7 @@
 			children = (
 				B6E2D0E027414452004E45BC /* ApiService.swift */,
 				B6E2D0E227414480004E45BC /* ApiAgent.swift */,
+				B66304472746AE1A001E4710 /* Cache.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E2D0C627414167004E45BC /* NotificationController.swift in Sources */,
+				B66304482746AE1A001E4710 /* Cache.swift in Sources */,
 				B6E2D0C427414167004E45BC /* ContentView.swift in Sources */,
 				B6E2D0E127414452004E45BC /* ApiService.swift in Sources */,
 				B6E2D0CA27414167004E45BC /* ComplicationController.swift in Sources */,

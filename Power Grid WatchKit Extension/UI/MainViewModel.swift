@@ -9,8 +9,11 @@ import Foundation
 import Combine
 import SwiftUI
 import SwiftUICharts
+import os
 
 class MainViewModel: ObservableObject {
+    private let cache = Cache<FuelMix.ID, FuelMix>()
+    
     var cancellables: Set<AnyCancellable> = Set()
     @Published var fuelMix = [FuelMixRow]()
     @Published var lastUpdated = ""
@@ -25,6 +28,20 @@ class MainViewModel: ObservableObject {
     }
     
     func fetchFuelMix() {
+        let id: FuelMix.ID = 0
+        
+        if let cached = cache[id] {
+            os_log("Fetching from cache")
+            fuelMix.append(
+                contentsOf:
+                    cached.rows
+                    .map({ row in FuelMixRow(row: row, totalFuel: cached.totalFuel) })
+                    .sorted(by: { first, second in first.id < second.id }))
+            self.state = State.LOADED
+            return
+        }
+        os_log("Fetching online")
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "dd-MMM-yyyy"
         let todayDate = formatter.string(from: Date())
@@ -34,6 +51,8 @@ class MainViewModel: ObservableObject {
             .sink(
                 receiveCompletion: { _ in },
                 receiveValue: { fuelMixResponse in
+                    self.cache[fuelMixResponse.id] = fuelMixResponse
+                    
                     self.state = State.LOADED
                     
                     let formatter = DateFormatter()
