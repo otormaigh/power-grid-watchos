@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B64F13C12741B7DB0054E6B8 /* SwiftUICharts */; };
+		B676E1722756CDA7007CC052 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B676E1742756CDA7007CC052 /* Localizable.strings */; };
 		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2D0B627414167004E45BC /* Assets.xcassets */; };
 		B6E2D0BD27414167004E45BC /* Power Grid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,6 +68,8 @@
 
 /* Begin PBXFileReference section */
 		B67569342742EDA4007E0617 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		B676E1732756CDA7007CC052 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B676E1752756CDAC007CC052 /* ga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B6E2D0AD27414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B127414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B627414167004E45BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -139,6 +142,7 @@
 				B6E2D0D027414168004E45BC /* Info.plist */,
 				B6E2D0D127414168004E45BC /* PushNotificationPayload.apns */,
 				B6E2D0CD27414168004E45BC /* Preview Content */,
+				B676E1742756CDA7007CC052 /* Localizable.strings */,
 			);
 			path = "Power Grid WatchKit Extension";
 			sourceTree = "<group>";
@@ -264,6 +268,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ga,
 			);
 			mainGroup = B6E2D0A627414166004E45BC;
 			packageReferences = (
@@ -301,6 +306,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6E2D0CF27414168004E45BC /* Preview Assets.xcassets in Resources */,
+				B676E1722756CDA7007CC052 /* Localizable.strings in Resources */,
 				B6E2D0CC27414168004E45BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,6 +343,18 @@
 			targetProxy = B6E2D0BE27414167004E45BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B676E1742756CDA7007CC052 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B676E1732756CDA7007CC052 /* en */,
+				B676E1752756CDAC007CC052 /* ga */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B6E2D0D227414168004E45BC /* Debug */ = {

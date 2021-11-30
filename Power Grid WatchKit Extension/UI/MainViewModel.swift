@@ -26,6 +26,7 @@ class MainViewModel: ObservableObject {
     
     func fetchFuelMix() {
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_IE")
         formatter.dateFormat = "dd-MMM-yyyy"
         let todayDate = formatter.string(from: Date())
         
@@ -36,15 +37,23 @@ class MainViewModel: ObservableObject {
                 receiveValue: { fuelMixResponse in
                     self.state = State.LOADED
                     
-                    let formatter = DateFormatter()
-                    formatter.dateFormat = "dd-MMM HH:mm"
+                    if !(fuelMixResponse.errorMessage ?? "").isEmpty {
+                        print("ErrorMessage: \(String(describing: fuelMixResponse.errorMessage))")
+                        self.state = State.ERROR
+                    } else {
+                        let formatter = DateFormatter()
+                        formatter.locale = Locale(identifier: "en_IE")
+                        formatter.dateFormat = "dd-MMM HH:mm"
+                        
+                        self.lastUpdated = formatter.string(from: fuelMixResponse.rows[0].effectiveTime)
+                        self.fuelMix.append(
+                            contentsOf:
+                                fuelMixResponse.rows
+                                .map({ row in FuelMixRow(row: row, totalFuel: fuelMixResponse.totalFuel) })
+                                .sorted(by: { first, second in first.id < second.id }))
+                    }
                     
-                    self.lastUpdated = formatter.string(from: fuelMixResponse.rows[0].effectiveTime)
-                    self.fuelMix.append(
-                        contentsOf:
-                            fuelMixResponse.rows
-                            .map({ row in FuelMixRow(row: row, totalFuel: fuelMixResponse.totalFuel) })
-                            .sorted(by: { first, second in first.id < second.id }))
+                    print("State: \(self.state)")
                 }
             ).store(in : &cancellables)
     }
@@ -54,6 +63,7 @@ enum State {
     case IDLE
     case LOADING
     case LOADED
+    case ERROR
 }
 
 extension FuelMixRow {

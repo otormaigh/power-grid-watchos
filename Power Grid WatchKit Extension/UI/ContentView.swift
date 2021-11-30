@@ -32,7 +32,7 @@ struct ContentView: View {
                     
                     FuelMixList(fuelMix: viewModel.fuelMix, geo: geo)
                     
-                    Text("Last Updated: \(viewModel.lastUpdated)")
+                    Text("\(String(localized: "last_updated")): \(viewModel.lastUpdated)")
                         .font(.footnote)
 //                        .padding(.top, 10)
                         .padding(.bottom, 30)

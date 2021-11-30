@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Power Grid
+
+  Created by Elliot Tormey on 30/11/2021.
+*/
+
+"fuel_type_coal" = "Gual";
+"fuel_type_gas" = "Gáis";
+"fuel_type_net_import" = "Glaniompórtáil";
+"fuel_type_other" = "Eile";
+"fuel_type_renewable" = "In-athnuaite";
+"last_updated" = "Uasdátaithe";

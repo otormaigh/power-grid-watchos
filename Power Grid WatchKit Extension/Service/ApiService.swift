@@ -46,6 +46,7 @@ struct FuelMix: Decodable, Identifiable {
         errorMessage = try String(values.decodeIfPresent(String.self, forKey: .errorMessage) ?? "")
         
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_IE")
         formatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
         lastUpdated = formatter.date(from: try String(values.decode(String.self, forKey: .lastUpdated)))!
         
@@ -89,6 +90,7 @@ struct FuelMixRow: Decodable, Identifiable {
         let values = try decoder.container(keyedBy: CodingKeys.self)
         
         let formatter = DateFormatter()
+        formatter.locale = Locale(identifier: "en_IE")
         formatter.dateFormat = "dd-MMM-yyyy HH:mm:ss"
         effectiveTime = formatter.date(from: try String(values.decode(String.self, forKey: .effectiveTime)))!
         
@@ -106,23 +108,23 @@ struct FuelMixRow: Decodable, Identifiable {
         case FuelType.coal.rawValue:
             id = 0
             color = Color(red: 143/255, green: 24/255, blue: 96/255)
-            label = "Coal"
+            label = String(localized: "fuel_type_coal")
         case FuelType.gas.rawValue:
             id = 1
             color = Color(red: 210/255, green: 94/255, blue: 21/255)
-            label = "Gas"
+            label = String(localized: "fuel_type_gas")
         case FuelType.netImport.rawValue:
             id = 2
             color = Color(red: 195/255, green: 22/255, blue: 50/255)
-            label = "Net Import"
+            label = String(localized: "fuel_type_net_import")
         case FuelType.otherFossil.rawValue:
             id = 3
             color = Color(red: 250/255, green: 182/255, blue: 0)
-            label = "Other"
+            label = String(localized: "fuel_type_other")
         case FuelType.renewable.rawValue:
             id = 4
             color = Color(red: 0, green: 99/255, blue: 115/255)
-            label = "Renewable"
+            label = String(localized: "fuel_type_renewable")
         default :
             id = -1
             color = Color.white

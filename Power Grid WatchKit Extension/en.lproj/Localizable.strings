@@ -1,0 +1,13 @@
+/* 
+  Localizable.strings
+  Power Grid
+
+  Created by Elliot Tormey on 30/11/2021.
+*/
+
+"fuel_type_coal" = "Coal";
+"fuel_type_gas" = "Gas";
+"fuel_type_net_import" = "Net Import";
+"fuel_type_other" = "Other";
+"fuel_type_renewable" = "Renewable";
+"last_updated" = "Last Updated";
