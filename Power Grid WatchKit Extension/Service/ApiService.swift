@@ -15,7 +15,7 @@ enum ApiService {
 
 extension ApiService {
     static func fuelMix(startTime: String, endTime: String) -> AnyPublisher<FuelMix, Error> {
-        let request = URLRequest(url: URL(string: "http://smartgriddashboard.eirgrid.com/DashboardService.svc/data?area=fuelmix&region=ALL&datefrom=\(startTime)&dateto=\(endTime)")!)
+        let request = URLRequest(url: URL(string: "https://www.smartgriddashboard.com/DashboardService.svc/data?area=fuelmix&region=ALL&datefrom=\(startTime)&dateto=\(endTime)")!)
         return agent.run(request)
             .map(\.value)
             .print()
