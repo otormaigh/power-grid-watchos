@@ -9,12 +9,12 @@ import SwiftUI
 
 @main
 struct PowerGridApp: App {
-    @SceneBuilder var body: some Scene {
-        WindowGroup {
-                ContentView(viewModel: MainViewModel())
-                    .edgesIgnoringSafeArea(.all)
-        }
-
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
+  @SceneBuilder var body: some Scene {
+    WindowGroup {
+      ContentView(viewModel: MainViewModel())
+        .edgesIgnoringSafeArea(.all)
     }
+    
+    WKNotificationScene(controller: NotificationController.self, category: "myCategory")
+  }
 }

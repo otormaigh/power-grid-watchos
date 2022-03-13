@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B611E0EC27DE63CD00480772 /* FuelMixPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611E0EB27DE63CD00480772 /* FuelMixPage.swift */; };
+		B611E0EE27DE63F600480772 /* FuelMixChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611E0ED27DE63F600480772 /* FuelMixChart.swift */; };
+		B611E0F027DE641100480772 /* FuelMixList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611E0EF27DE641100480772 /* FuelMixList.swift */; };
+		B611E0F327DE668600480772 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611E0F227DE668600480772 /* ViewExt.swift */; };
+		B611E0F527DE66A400480772 /* RoundedCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = B611E0F427DE66A400480772 /* RoundedCorner.swift */; };
+		B62F49D927DE69970031328C /* FuelMixRowExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49D827DE69970031328C /* FuelMixRowExt.swift */; };
+		B62F49DE27DE6BD00031328C /* FuelMixRox.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49DD27DE6BD00031328C /* FuelMixRox.swift */; };
+		B62F49E027DE6BFE0031328C /* FuelMixResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49DF27DE6BFE0031328C /* FuelMixResponse.swift */; };
+		B62F49E227DE6C590031328C /* FuelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49E127DE6C590031328C /* FuelType.swift */; };
+		B62F49E427DE6C7A0031328C /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49E327DE6C7A0031328C /* Region.swift */; };
+		B62F49E627DE6C8C0031328C /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49E527DE6C8C0031328C /* Status.swift */; };
 		B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B64F13C12741B7DB0054E6B8 /* SwiftUICharts */; };
 		B676E1722756CDA7007CC052 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B676E1742756CDA7007CC052 /* Localizable.strings */; };
 		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -67,6 +78,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B611E0EB27DE63CD00480772 /* FuelMixPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMixPage.swift; sourceTree = "<group>"; };
+		B611E0ED27DE63F600480772 /* FuelMixChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMixChart.swift; sourceTree = "<group>"; };
+		B611E0EF27DE641100480772 /* FuelMixList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMixList.swift; sourceTree = "<group>"; };
+		B611E0F227DE668600480772 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		B611E0F427DE66A400480772 /* RoundedCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedCorner.swift; sourceTree = "<group>"; };
+		B62F49D827DE69970031328C /* FuelMixRowExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMixRowExt.swift; sourceTree = "<group>"; };
+		B62F49DD27DE6BD00031328C /* FuelMixRox.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMixRox.swift; sourceTree = "<group>"; };
+		B62F49DF27DE6BFE0031328C /* FuelMixResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMixResponse.swift; sourceTree = "<group>"; };
+		B62F49E127DE6C590031328C /* FuelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelType.swift; sourceTree = "<group>"; };
+		B62F49E327DE6C7A0031328C /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		B62F49E527DE6C8C0031328C /* Status.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		B67569342742EDA4007E0617 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B676E1732756CDA7007CC052 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B676E1752756CDAC007CC052 /* ga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -100,6 +122,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B611E0EA27DE63B400480772 /* Fuel Mix */ = {
+			isa = PBXGroup;
+			children = (
+				B611E0EB27DE63CD00480772 /* FuelMixPage.swift */,
+				B611E0ED27DE63F600480772 /* FuelMixChart.swift */,
+				B611E0EF27DE641100480772 /* FuelMixList.swift */,
+			);
+			path = "Fuel Mix";
+			sourceTree = "<group>";
+		};
+		B611E0F127DE667700480772 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B611E0F227DE668600480772 /* ViewExt.swift */,
+				B62F49D827DE69970031328C /* FuelMixRowExt.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B611E0F927DE67CF00480772 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				B6E2D0C527414167004E45BC /* NotificationController.swift */,
+				B6E2D0C727414167004E45BC /* NotificationView.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		B62F49D727DE68D20031328C /* Complication */ = {
+			isa = PBXGroup;
+			children = (
+				B6E2D0C927414167004E45BC /* ComplicationController.swift */,
+			);
+			path = Complication;
+			sourceTree = "<group>";
+		};
+		B62F49DA27DE6BA90031328C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B62F49DD27DE6BD00031328C /* FuelMixRox.swift */,
+				B62F49DF27DE6BFE0031328C /* FuelMixResponse.swift */,
+				B62F49E127DE6C590031328C /* FuelType.swift */,
+				B62F49E327DE6C7A0031328C /* Region.swift */,
+				B62F49E527DE6C8C0031328C /* Status.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		B6E2D0A627414166004E45BC = {
 			isa = PBXGroup;
 			children = (
@@ -132,12 +202,13 @@
 		B6E2D0C027414167004E45BC /* Power Grid WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				B62F49DA27DE6BA90031328C /* Data */,
+				B62F49D727DE68D20031328C /* Complication */,
+				B611E0F927DE67CF00480772 /* Notification */,
+				B611E0F127DE667700480772 /* Extensions */,
 				B6EC4ED5274154BB00E4839C /* UI */,
 				B6E2D0DF27414442004E45BC /* Service */,
 				B6E2D0C127414167004E45BC /* PowerGridApp.swift */,
-				B6E2D0C527414167004E45BC /* NotificationController.swift */,
-				B6E2D0C727414167004E45BC /* NotificationView.swift */,
-				B6E2D0C927414167004E45BC /* ComplicationController.swift */,
 				B6E2D0CB27414168004E45BC /* Assets.xcassets */,
 				B6E2D0D027414168004E45BC /* Info.plist */,
 				B6E2D0D127414168004E45BC /* PushNotificationPayload.apns */,
@@ -167,8 +238,10 @@
 		B6EC4ED5274154BB00E4839C /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				B611E0EA27DE63B400480772 /* Fuel Mix */,
 				B6E2D0C327414167004E45BC /* ContentView.swift */,
 				B6EC4ED127414BF400E4839C /* MainViewModel.swift */,
+				B611E0F427DE66A400480772 /* RoundedCorner.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -318,13 +391,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B611E0F027DE641100480772 /* FuelMixList.swift in Sources */,
 				B6E2D0C627414167004E45BC /* NotificationController.swift in Sources */,
+				B611E0EE27DE63F600480772 /* FuelMixChart.swift in Sources */,
+				B62F49E027DE6BFE0031328C /* FuelMixResponse.swift in Sources */,
+				B62F49D927DE69970031328C /* FuelMixRowExt.swift in Sources */,
 				B6E2D0C427414167004E45BC /* ContentView.swift in Sources */,
+				B62F49E227DE6C590031328C /* FuelType.swift in Sources */,
+				B611E0F527DE66A400480772 /* RoundedCorner.swift in Sources */,
+				B611E0F327DE668600480772 /* ViewExt.swift in Sources */,
+				B62F49E427DE6C7A0031328C /* Region.swift in Sources */,
 				B6E2D0E127414452004E45BC /* ApiService.swift in Sources */,
+				B611E0EC27DE63CD00480772 /* FuelMixPage.swift in Sources */,
 				B6E2D0CA27414167004E45BC /* ComplicationController.swift in Sources */,
 				B6E2D0C227414167004E45BC /* PowerGridApp.swift in Sources */,
 				B6E2D0E327414480004E45BC /* ApiAgent.swift in Sources */,
 				B6E2D0C827414167004E45BC /* NotificationView.swift in Sources */,
+				B62F49DE27DE6BD00031328C /* FuelMixRox.swift in Sources */,
+				B62F49E627DE6C8C0031328C /* Status.swift in Sources */,
 				B6EC4ED227414BF400E4839C /* MainViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
