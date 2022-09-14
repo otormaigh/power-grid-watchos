@@ -20,6 +20,7 @@
 		B62F49E627DE6C8C0031328C /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = B62F49E527DE6C8C0031328C /* Status.swift */; };
 		B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B64F13C12741B7DB0054E6B8 /* SwiftUICharts */; };
 		B676E1722756CDA7007CC052 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B676E1742756CDA7007CC052 /* Localizable.strings */; };
+		B6854E3728D255D100FAC7EC /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = B6854E3428D2527F00FAC7EC /* SwiftUICharts */; };
 		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2D0B627414167004E45BC /* Assets.xcassets */; };
 		B6E2D0C227414167004E45BC /* PowerGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0C127414167004E45BC /* PowerGridApp.swift */; };
@@ -96,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6854E3728D255D100FAC7EC /* SwiftUICharts in Frameworks */,
 				B64F13C22741B7DB0054E6B8 /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,7 +519,7 @@
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Power-Grid-WatchKit-App-Info.plist";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Power_Grid.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -549,7 +551,7 @@
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Power-Grid-WatchKit-App-Info.plist";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = Power_Grid.ComplicationController;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
@@ -573,12 +575,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.5.2;
+				SWIFT_VERSION = 5.7;
 			};
 			name = Debug;
 		};
@@ -586,12 +588,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
-				MARKETING_VERSION = 0.1;
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.5.2;
+				SWIFT_VERSION = 5.7;
 			};
 			name = Release;
 		};
