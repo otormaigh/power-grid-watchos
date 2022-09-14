@@ -22,7 +22,6 @@
 		B676E1722756CDA7007CC052 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B676E1742756CDA7007CC052 /* Localizable.strings */; };
 		B6E2D0B227414167004E45BC /* Power Grid.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B6E2D0B127414167004E45BC /* Power Grid.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6E2D0B627414167004E45BC /* Assets.xcassets */; };
-		B6E2D0BD27414167004E45BC /* Power Grid WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B6E2D0C227414167004E45BC /* PowerGridApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0C127414167004E45BC /* PowerGridApp.swift */; };
 		B6E2D0C427414167004E45BC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0C327414167004E45BC /* ContentView.swift */; };
 		B6E2D0C627414167004E45BC /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E2D0C527414167004E45BC /* NotificationController.swift */; };
@@ -43,27 +42,9 @@
 			remoteGlobalIDString = B6E2D0B027414167004E45BC;
 			remoteInfo = "Power Grid WatchKit App";
 		};
-		B6E2D0BE27414167004E45BC /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = B6E2D0A727414166004E45BC /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B6E2D0BB27414167004E45BC;
-			remoteInfo = "Power Grid WatchKit Extension";
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B6E2D0D727414168004E45BC /* Embed App Extensions */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 13;
-			files = (
-				B6E2D0BD27414167004E45BC /* Power Grid WatchKit Extension.appex in Embed App Extensions */,
-			);
-			name = "Embed App Extensions";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		B6E2D0DB27414168004E45BC /* Embed Watch Content */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,10 +73,10 @@
 		B67569342742EDA4007E0617 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		B676E1732756CDA7007CC052 /* en */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B676E1752756CDAC007CC052 /* ga */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = ga; path = ga.lproj/Localizable.strings; sourceTree = "<group>"; };
+		B6854E3528D2527F00FAC7EC /* Power-Grid-WatchKit-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Power-Grid-WatchKit-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 		B6E2D0AD27414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B127414167004E45BC /* Power Grid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Power Grid.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0B627414167004E45BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Power Grid WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6E2D0C127414167004E45BC /* PowerGridApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PowerGridApp.swift; sourceTree = "<group>"; };
 		B6E2D0C327414167004E45BC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B6E2D0C527414167004E45BC /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
@@ -186,7 +167,6 @@
 			children = (
 				B6E2D0AD27414167004E45BC /* Power Grid.app */,
 				B6E2D0B127414167004E45BC /* Power Grid.app */,
-				B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -194,6 +174,7 @@
 		B6E2D0B527414167004E45BC /* Power Grid WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
+				B6854E3528D2527F00FAC7EC /* Power-Grid-WatchKit-App-Info.plist */,
 				B6E2D0B627414167004E45BC /* Assets.xcassets */,
 			);
 			path = "Power Grid WatchKit App";
@@ -281,37 +262,20 @@
 			buildConfigurationList = B6E2D0D827414168004E45BC /* Build configuration list for PBXNativeTarget "Power Grid WatchKit App" */;
 			buildPhases = (
 				B6E2D0AF27414167004E45BC /* Resources */,
-				B6E2D0D727414168004E45BC /* Embed App Extensions */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				B6E2D0BF27414167004E45BC /* PBXTargetDependency */,
-			);
-			name = "Power Grid WatchKit App";
-			productName = "Power Grid WatchKit App";
-			productReference = B6E2D0B127414167004E45BC /* Power Grid.app */;
-			productType = "com.apple.product-type.application.watchapp2";
-		};
-		B6E2D0BB27414167004E45BC /* Power Grid WatchKit Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6E2D0D427414168004E45BC /* Build configuration list for PBXNativeTarget "Power Grid WatchKit Extension" */;
-			buildPhases = (
 				B6E2D0B827414167004E45BC /* Sources */,
 				B6E2D0B927414167004E45BC /* Frameworks */,
-				B6E2D0BA27414167004E45BC /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Power Grid WatchKit Extension";
+			name = "Power Grid WatchKit App";
 			packageProductDependencies = (
-				B64F13C12741B7DB0054E6B8 /* SwiftUICharts */,
+				B6854E3428D2527F00FAC7EC /* SwiftUICharts */,
 			);
-			productName = "Power Grid WatchKit Extension";
-			productReference = B6E2D0BC27414167004E45BC /* Power Grid WatchKit Extension.appex */;
-			productType = "com.apple.product-type.watchkit2-extension";
+			productName = "Power Grid WatchKit App";
+			productReference = B6E2D0B127414167004E45BC /* Power Grid.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -321,15 +285,12 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
-				LastUpgradeCheck = 1320;
+				LastUpgradeCheck = 1400;
 				TargetAttributes = {
 					B6E2D0AC27414167004E45BC = {
 						CreatedOnToolsVersion = 13.1;
 					};
 					B6E2D0B027414167004E45BC = {
-						CreatedOnToolsVersion = 13.1;
-					};
-					B6E2D0BB27414167004E45BC = {
 						CreatedOnToolsVersion = 13.1;
 					};
 				};
@@ -353,7 +314,6 @@
 			targets = (
 				B6E2D0AC27414167004E45BC /* Power Grid */,
 				B6E2D0B027414167004E45BC /* Power Grid WatchKit App */,
-				B6E2D0BB27414167004E45BC /* Power Grid WatchKit Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -370,17 +330,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B6E2D0BA27414167004E45BC /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 				B6E2D0CF27414168004E45BC /* Preview Assets.xcassets in Resources */,
 				B676E1722756CDA7007CC052 /* Localizable.strings in Resources */,
 				B6E2D0CC27414168004E45BC /* Assets.xcassets in Resources */,
+				B6E2D0B727414167004E45BC /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,11 +373,6 @@
 			isa = PBXTargetDependency;
 			target = B6E2D0B027414167004E45BC /* Power Grid WatchKit App */;
 			targetProxy = B6E2D0B327414167004E45BC /* PBXContainerItemProxy */;
-		};
-		B6E2D0BF27414167004E45BC /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = B6E2D0BB27414167004E45BC /* Power Grid WatchKit Extension */;
-			targetProxy = B6E2D0BE27414167004E45BC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -557,91 +505,35 @@
 			};
 			name = Release;
 		};
-		B6E2D0D527414168004E45BC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_ASSET_PATHS = "\"Power Grid WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = LHQ96L2A6B;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Power Grid WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Power Grid";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = Power_Grid_WatchKit_Extension.ComplicationController;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
-			};
-			name = Debug;
-		};
-		B6E2D0D627414168004E45BC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
-				DEVELOPMENT_ASSET_PATHS = "\"Power Grid WatchKit Extension/Preview Content\"";
-				DEVELOPMENT_TEAM = LHQ96L2A6B;
-				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Power Grid WatchKit Extension/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = "Power Grid";
-				INFOPLIST_KEY_CLKComplicationPrincipalClass = Power_Grid_WatchKit_Extension.ComplicationController;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_WKWatchOnly = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid.watchkitapp.watchkitextension";
-				PRODUCT_NAME = "${TARGET_NAME}";
-				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
-			};
-			name = Release;
-		};
 		B6E2D0D927414168004E45BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
 				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = Power_Grid_WatchKit_Extension;
+				INFOPLIST_FILE = "Power-Grid-WatchKit-App-Info.plist";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				MARKETING_VERSION = 0.1;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid.watchkitapp";
 				PRODUCT_NAME = "Power Grid";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.5.2;
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Debug;
 		};
@@ -650,22 +542,30 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = LHQ96L2A6B;
 				GENERATE_INFOPLIST_FILE = YES;
-				IBSC_MODULE = Power_Grid_WatchKit_Extension;
+				INFOPLIST_FILE = "Power-Grid-WatchKit-App-Info.plist";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				MARKETING_VERSION = 0.1;
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = "ie.otormaigh.Power-Grid.watchkitapp";
 				PRODUCT_NAME = "Power Grid";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.5.2;
+				SWIFT_VERSION = 5.7;
 				TARGETED_DEVICE_FAMILY = 4;
-				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+				WATCHOS_DEPLOYMENT_TARGET = 9.0;
 			};
 			name = Release;
 		};
@@ -703,15 +603,6 @@
 			buildConfigurations = (
 				B6E2D0D227414168004E45BC /* Debug */,
 				B6E2D0D327414168004E45BC /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B6E2D0D427414168004E45BC /* Build configuration list for PBXNativeTarget "Power Grid WatchKit Extension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B6E2D0D527414168004E45BC /* Debug */,
-				B6E2D0D627414168004E45BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -754,6 +645,11 @@
 			productName = SwiftUICharts;
 		};
 		B64F13C12741B7DB0054E6B8 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B64F13BF2741B7D30054E6B8 /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
+		};
+		B6854E3428D2527F00FAC7EC /* SwiftUICharts */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = B64F13BF2741B7D30054E6B8 /* XCRemoteSwiftPackageReference "ChartView" */;
 			productName = SwiftUICharts;
